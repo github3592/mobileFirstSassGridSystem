@@ -13,7 +13,9 @@
   @for $i from 0 through $grid-columns {
     @if $i != 0 {
       .col-#{$name}-#{$i} {
-        width: percentage($i/$grid-columns);
+        -ms-flex: 0 0 percentage($i/$grid-columns);
+        flex: 0 0 percentage($i/$grid-columns);
+        max-width: percentage($i/$grid-columns);
       }
     }
     .col-#{$name}-offset-#{$i} {

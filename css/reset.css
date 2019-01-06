@@ -1,0 +1,44 @@
+body, * {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    font-family: yekan;
+}
+
+body {
+    font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::selection, * {
+    border: 0;
+    -webkit-border: 0;
+    -moz-border: 0;
+    -ms-border: 0;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background: transparent;
+}
