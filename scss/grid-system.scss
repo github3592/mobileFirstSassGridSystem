@@ -1,0 +1,38 @@
+@import "mixins";
+@import "default";
+
+.container {
+  width: 100% !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.containerFluid {
+  width: 100% !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.deleteRowSpace {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+@each $name, $declararion in $b-full {
+  @media only screen and #{$declararion} {
+    @include grid-loop($name);
+  }
+}

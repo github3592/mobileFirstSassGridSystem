@@ -1,0 +1,14 @@
+$grid-gutter: 20px !default;
+$grid-max-width: 1200px+ ($grid-gutter * 2) !default;
+$grid-columns: 12 !default;
+
+$b-sm: 767px !default;
+$b-md: 992px !default;
+$b-lg: 1200px !default;
+
+$b-full: (
+  "lg": "(min-width:#{$b-lg})",
+  "md": "(min-with:#{$b-md}) and (max-width:#{$b-lg - 1})",
+  "sm": "(min-with:#{$b-sm + 1}) and (max-width:#{$b-md - 1})",
+  "xs": "(max-width:#{$b-sm})"
+) !default;
